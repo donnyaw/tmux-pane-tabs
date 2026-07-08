@@ -13,8 +13,8 @@ _set_bindings() {
 
   tmux bind "$prefix" switch-client -T pane-tabs
 
-  tmux bind -T pane-tabs t split-window -h \; resize-pane -Z
-  tmux bind -T pane-tabs v split-window -v \; resize-pane -Z
+  tmux bind -T pane-tabs t run-shell "tmux split-window -h; tmux resize-pane -Z"
+  tmux bind -T pane-tabs v run-shell "tmux split-window -v; tmux resize-pane -Z"
   tmux bind -T pane-tabs c confirm-before -p "kill-pane #P? (y/n)" kill-pane
   tmux bind -T pane-tabs r command-prompt -I "#{pane_title}" { select-pane -T "%%" }
 
