@@ -1,5 +1,9 @@
 # tmux-pane-tabs
 
+> **⚠️ EXPERIMENTAL — This plugin is still in early development.**
+>
+> It has not been thoroughly tested in production environments. Use with caution. Features and keybindings may change without notice.
+
 Manage tmux panes like browser or yazi tabs.
 
 - Switch between panes by number
